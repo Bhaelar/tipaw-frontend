@@ -1,5 +1,258 @@
 .App {
+  color: #707070;
+  padding: 50px 0px;
+  background: #5acee8;
+}
+
+.wrapper {
+  margin: 30px auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: min-content;
+  max-width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #5acee8;
+  font-weight: 700;
+}
+
+button {
+  outline: none;
+  text-decoration: none;
+  background-clip: padding-box;
+}
+
+input {
+  color: #707070;
+  opacity: 1;
+}
+
+.register {
+  z-index: 1;
+  position: relative;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 0 14px 0 rgb(0 0 0 / 15%);
+  padding: 30px;
+  margin: auto;
+  max-width: 100%;
+}
+
+.social-login {
+  margin-bottom: 15px;
+  vertical-align: top;
+  width: 100%;
+  display: block;
+}
+
+.google-login {
+  white-space: nowrap;
+  box-sizing: border-box !important;
+  border-radius: 100px;
+  height: 40px;
+  line-height: unset;
+  padding: 0px 24px;
+  box-shadow: none;
+  width: 100%;
+  display: flex;
+  color: #707070;
+  background-color: white;
+  border: 2px solid transparent;
+  border-color: #707070;
   text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-login:before {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.facebook-login {
+  white-space: nowrap;
+  box-sizing: border-box !important;
+  border-radius: 100px;
+  height: 40px;
+  line-height: unset;
+  padding: 0px 24px;
+  box-shadow: none;
+  width: 100%;
+  display: flex;
+  color: white;
+  background: #3b5998;
+  border: none;
+  border-color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-login:before {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  vertical-align: top;
+  width: calc(100% - 0px);
+  display: block;
+}
+
+.input-label {
+  margin-bottom: 6px;
+  text-align: left;
+  font-weight: 600;
+  color: #8c96a3;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.required {
+  color: #ff453e;
+  margin-left: 6px;
+  display: inline-block;
+}
+
+.text-field {
+  position: relative;
+  height: fit-content;
+  width: 90%;
+  block-size: fit-content;
+}
+
+.input-class {
+  width: 80%;
+  padding: 7px 42px 7px 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: initial;
+  background: white;
+  color: rgb(112, 112, 112) !important;
+}
+
+.reveal-password {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  color: #707070;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-checkbox-label {
+  margin-left: 10px;
+  color: #616b77;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+}
+
+.error {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(255, 69, 62);
+  text-align: left;
+}
+
+.submit {
+  white-space: nowrap;
+  box-sizing: border-box !important;
+  border-radius: 100px;
+  height: 40px;
+  line-height: unset;
+  padding: 0px 24px;
+  box-shadow: none;
+  width: 100%;
+  display: flex;
+  color: white;
+  background-color: #ffcc01;
+  border: none;
+  border-color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit:before {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .input-field {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .register {
+    width: 500px;
+  }
+
+  .text-field {
+    width: 100%;
+  }
+
+  .input-class {
+    width: 90%;
+  }
+
+  .reveal-password {
+    right: -5px;
+  }
 }
 
 .App-logo {
